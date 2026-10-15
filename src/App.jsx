@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import jsPDF from "jspdf";
 
-const API = "http://localhost:8080/api";
+const API = "https://esg-backend-n9f9.onrender.com/api";
 const AUTH = "Basic " + btoa("esgadmin:EsgDemo@2026"); // demo only: move to a real login before deployment
 
 const metrics = [
