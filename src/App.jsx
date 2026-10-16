@@ -110,7 +110,7 @@ function App() {
 
   
 useEffect(() => {
-  fetch(`${API}/workflows/2/history`, {
+  fetch(`${API}/workflows/1/history`, {
     headers: { Authorization: AUTH }
   })
     .then((response) => {
