@@ -824,9 +824,14 @@ useEffect(() => {
                         key={file.originalFilename || file.storedName}
                         className="rounded-lg border border-slate-200 p-3"
                       >
-                        <p className="break-all text-sm font-medium">
-                          {file.originalFilename || file.storedName}
-                        </p>
+                        <a
+  href={`https://esg-backend-n9f9.onrender.com/api/evidence/open/${encodeURIComponent(file.storedName)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="break-all text-sm font-medium text-blue-600 underline cursor-pointer"
+>
+  {file.originalFilename || file.storedName}
+</a>
                         <p className="text-xs text-slate-500">
                           {(file.sizeBytes / 1024).toFixed(1)} KB · {file.uploaded}
                         </p>
